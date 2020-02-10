@@ -32,6 +32,21 @@ let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 
 // Begin your solution here...
 
+// Create the ending x values for the lines
+for x in stride(from: 10, through: 20 * 40, by: 40) {
+    let endX = x
+    let startX = x - 400
+
+    // draw the lines
+    canvas.drawLine(from: Point(x: startX, y: 0), to: Point(x: endX, y: 400), lineWidth: 15, capStyle: .square)
+
+}
+
+
+
+canvas.drawRectangle(at: Point(x: 0, y: 400), width: 400, height: 200)
+
+
 
 /*:
  ## Use Source Control
